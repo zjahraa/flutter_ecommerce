@@ -132,8 +132,8 @@ class _DashboardPageState extends State<DashboardPage> {
               children: [
                 // IMage
                 Container(
-                  width: 140,
-                  height: 110,
+                  width: 190,
+                  height: 130,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                   ),
@@ -192,7 +192,7 @@ class _DashboardPageState extends State<DashboardPage> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          backgroundColor: Colors.transparent,
+          backgroundColor: Colors.white,
           shadowColor: Colors.transparent,
           foregroundColor: Colors.black,
           actions: [

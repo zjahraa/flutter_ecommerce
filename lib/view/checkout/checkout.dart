@@ -162,7 +162,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           const SizedBox(width: 7),
                           Flexible(
                             child: Text(
-                              'Ini halaman terakhir dari proses belanjaanmu',
+                              'This is the last page of your shopping process',
                               style: MyStyle.regularText.copyWith(
                                 fontSize: MyFontSize.text_12,
                               ),
@@ -187,7 +187,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text('Pengiriman dan pembayaran',
+                          Text('Delivery and payment',
                               style: MyStyle.productCartTitle)
                         ],
                       ),
@@ -206,7 +206,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "Metode Pembayaran",
+                                        "Payment method",
                                         style: MyStyle.paymentMethodsTitle,
                                       ),
                                       SizedBox(
@@ -272,14 +272,14 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               _payment != null
                                   ? Row(
                                       children: [
-                                        Text("Bayar Dengan "),
+                                        Text("Pay With "),
                                         _payment == PaymentMethod.ovo
                                             ? Text("OVO")
                                             : Text("GOPAY")
                                       ],
                                     )
                                   : Text(
-                                      'Pilih metode pembayaran ',
+                                      'Choose a payment method ',
                                       style: MyStyle.productPrice,
                                     ),
                               const IconButton(
@@ -302,7 +302,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Total Bayar', style: MyStyle.productTitle),
+                              Text('Total', style: MyStyle.productTitle),
+                              SizedBox(height: 10,),
                               Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -346,7 +347,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                     'assets/images/icons/checkout_icon.png'),
                                 const SizedBox(width: 3),
                                 Text(
-                                  'Bayar',
+                                  'Pay',
                                   style: MyStyle.productDetailTitle.copyWith(
                                     fontSize: MyFontSize.text_12,
                                     color: MyColors.white,

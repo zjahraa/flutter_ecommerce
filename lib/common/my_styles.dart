@@ -78,4 +78,10 @@ class MyStyle {
     fontWeight: FontWeight.w600,
     fontFamily: GoogleFonts.inter().fontFamily,
   );
+
+  static TextStyle productcategory= TextStyle(
+    fontSize: MyFontSize.text_16,
+    fontWeight: FontWeight.w600,
+    fontFamily: GoogleFonts.inter().fontFamily,
+  );
 }

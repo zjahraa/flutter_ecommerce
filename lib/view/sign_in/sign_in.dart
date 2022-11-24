@@ -81,6 +81,7 @@ class _SignInPageState extends State<SignInPage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
+              SizedBox(height: 90,),
               Image.asset('assets/images/logo/main-logo.png'),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -96,7 +97,7 @@ class _SignInPageState extends State<SignInPage> {
                     borderRadius: BorderRadius.all(Radius.circular(15)),
                   ),
                   hintText: "Email",
-                  prefixIcon: const Icon(Icons.person_outline_rounded),
+                  prefixIcon: const Icon(Icons.email_outlined),
                   hintStyle: MyStyle.regularText,
                 ),
               ),
@@ -113,15 +114,7 @@ class _SignInPageState extends State<SignInPage> {
                   hintStyle: MyStyle.regularText,
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  TextButton(
-                    onPressed: () {},
-                    child: Text("Forgot Password?", style: MyStyle.regularText),
-                  ),
-                ],
-              ),
+              SizedBox(height: 50,),
               isLoading ? LoadingButton() : signInButton(),
               const SizedBox(height: 11),
               Row(

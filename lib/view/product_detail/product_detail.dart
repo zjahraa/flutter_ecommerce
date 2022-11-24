@@ -61,7 +61,7 @@ class ProductDetailPage extends StatelessWidget {
                     height: 12,
                   ),
                   Text(
-                    'Berhasil menambahkan keranjang',
+                    'Successfully added',
                     style: MyStyle.productDetailText,
                   ),
                   SizedBox(
@@ -81,7 +81,7 @@ class ProductDetailPage extends StatelessWidget {
                         ),
                       ),
                       child: Text(
-                        'Lihat Keranjang',
+                        'View Cart',
                         style: MyStyle.productDetailTitle.copyWith(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -113,7 +113,7 @@ class ProductDetailPage extends StatelessWidget {
                       bottomRight: Radius.circular(30),
                     ),
                   ),
-                  height: 250,
+                  height: 300,
                   width: double.infinity,
                   child: ClipRRect(
                     child: Image.network(
@@ -201,8 +201,15 @@ class ProductDetailPage extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 18),
+                    Text(this.product!.category!,
+                        style: MyStyle.productcategory),
+                    SizedBox(height: 10,),
+                    Text(this.product!.brand!,
+                        style: MyStyle.productcategory),
+                    SizedBox(height: 10,),
                     Text(this.product!.description!,
-                        style: MyStyle.productDetailDesc)
+                        style: MyStyle.productDetailDesc),
+                    SizedBox(height: 160,)
                   ],
                 ),
               ),

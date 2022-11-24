@@ -45,7 +45,7 @@ class _ProfilePageState extends State<ProfilePage> {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
             backgroundColor: Colors.black,
             content: const Text(
-              "Profile berhasil diupdate",
+              "Profile successfully updated",
               textAlign: TextAlign.center,
             )));
       } else {
@@ -53,7 +53,7 @@ class _ProfilePageState extends State<ProfilePage> {
           SnackBar(
             backgroundColor: MyColors.alertColor,
             content: const Text(
-              'Gagal update, email atau username sudah digunakan!',
+              'Update failed, email or username already used!',
               textAlign: TextAlign.center,
             ),
           ),
@@ -134,7 +134,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Nama Lengkap ",
+                    "Full Name ",
                     style: MyStyle.productCartTitle,
                   ),
                   SizedBox(
@@ -146,7 +146,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       border: const OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(15)),
                       ),
-                      hintText: "Nama Lengkap",
+                      hintText: "Full Name",
                       prefixIcon: const Icon(Icons.person_outline_rounded),
                       hintStyle: MyStyle.regularText,
                     ),

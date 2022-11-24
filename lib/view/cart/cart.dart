@@ -179,7 +179,7 @@ class CartPage extends StatelessWidget {
                         margin: const EdgeInsets.only(
                             top: 100, left: 30, right: 30),
                         child: Text(
-                          "Keranjang anda kosong\, ayo mulai belanja Sekarang",
+                          "Your cart is empty\,let's start shopping now",
                           style: MyStyle.productCartTitle.copyWith(
                               fontSize: 20, fontWeight: FontWeight.normal),
                         ),

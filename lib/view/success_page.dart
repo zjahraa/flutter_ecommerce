@@ -25,7 +25,7 @@ class SuccessPage extends StatelessWidget {
                   height: 20,
                 ),
                 Text(
-                  "Pemesanan berhasil dilakukan",
+                  "Order done successfully",
                   style: MyStyle.sectionTitle,
                 ),
                 const SizedBox(
@@ -33,7 +33,7 @@ class SuccessPage extends StatelessWidget {
                 ),
                 Flexible(
                     child: Text(
-                  "Mohon tunggu admin akan menghubungi anda",
+                  "Please wait admin will contact you",
                   style: MyStyle.sectionTitle.copyWith(fontSize: 14),
                 )),
                 const SizedBox(
@@ -55,7 +55,7 @@ class SuccessPage extends StatelessWidget {
                       ),
                     ),
                     child: Text(
-                      'Belanja Lagi',
+                      'Shop Again',
                       style: MyStyle.pageTitle.copyWith(
                           fontSize: 16,
                           fontWeight: FontWeight.w400,

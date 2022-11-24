@@ -67,7 +67,8 @@ class _SignUpPageState extends State<SignUpPage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Image.asset('assets/images/logo/main-logo-cropped.png'),
+              SizedBox(height: 40,),
+              Image.asset('assets/images/logo/main-logo.png',),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -123,15 +124,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   hintStyle: MyStyle.regularText,
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  TextButton(
-                    onPressed: () {},
-                    child: Text("Forgot Password?", style: MyStyle.regularText),
-                  ),
-                ],
-              ),
+             SizedBox(height: 50,),
               isLoading
                   ? LoadingButton()
                   : ElevatedButton(
@@ -170,51 +163,6 @@ class _SignUpPageState extends State<SignUpPage> {
                 ],
               ),
               const SizedBox(height: 32),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  IconButton(
-                    style: ButtonStyle(
-                      padding: MaterialStateProperty.all(EdgeInsets.zero),
-                      backgroundColor: MaterialStateProperty.all(Colors.white),
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(40),
-                        ),
-                      ),
-                    ),
-                    onPressed: null,
-                    icon: Image.asset('assets/images/icons/twitter.png'),
-                  ),
-                  IconButton(
-                    style: ButtonStyle(
-                      padding: MaterialStateProperty.all(EdgeInsets.zero),
-                      backgroundColor: MaterialStateProperty.all(Colors.white),
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(40),
-                        ),
-                      ),
-                    ),
-                    onPressed: null,
-                    icon: Image.asset('assets/images/icons/google.png'),
-                  ),
-                  IconButton(
-                    style: ButtonStyle(
-                      padding: MaterialStateProperty.all(EdgeInsets.zero),
-                      backgroundColor: MaterialStateProperty.all(Colors.white),
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(40),
-                        ),
-                      ),
-                    ),
-                    onPressed: null,
-                    icon: Image.asset('assets/images/icons/facebook.png'),
-                  ),
-                ],
-              )
             ],
           ),
         ),
